@@ -1,5 +1,7 @@
-const Home = () => {
-  return <div>hello</div>;
-};
+import Game from 'src/components/Game'
 
-export default Home;
+const Home = () => {
+  return <Game />
+}
+
+export default Home
