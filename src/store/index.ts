@@ -32,6 +32,7 @@ export const boardSlice = createSlice({
       state.value[payload.index] = payload.turn;
 
       // check for win
+      // need to use `current` from immer to read new state
       console.log(checkWin(current(state.value)));
     },
   },
